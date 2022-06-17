@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+File: index.html
+GUI Assignment: HW3 Creating an Interactive Dynamic Table
+Wesley Gallo,  UMass Lowell Computer Science, Wesley_Gallo@student.uml.edu
+
+First Web Page
+Copyright (c) 2022 by Gallo. All rights reserved. It may be freely copied or 
+excerpted for educational purposes with credit to the author.
+references: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+https://www.w3schools.com/
+updated by WG on June 17th, 2022, at 7:30 AM
+-->
+<html>
+
+<head>
+	<title>Interactive Dynamic Table HW3</title>
+	<!-- Linking CSS StyleSheet -->
+	<link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+	<h1>Interactive Dynamic Table</h1>
+	<p>Please enter 4 numbers in each of the fields below, and select "Submit" to create a Dynamic Multiplication Table</p>
+	<form>
+		<!-- Verticle Variables and input-->
+		<div class="verticle">
+			<h2>Verticle Columns</h2>
+			<br>
+			<label for="VMin">V Minimum:</label>
+			<input type="number" id="VMin" placeholder="Vmin" name="Vmin">
+			<label for="VMax"> and V Maximum:</label>
+			<input type="number" id="VMax" placeholder="VMax" name="VMax">
+			<br>
+			<br> </div>
+		<br>
+		<br>
+		<!-- Horizontal Variables-->
+		<div class="horizontal">
+			<h2>Horizontal Columns</h2>
+			<br>
+			<label for="HMin">H Minimum:</label>
+			<input type="number" id="HMin" placeholder="HMin" name="Hmin">
+			<label for="HMax"> and H Maximum:</label>
+			<input type="number" id="HMax" placeholder="HMax" name="HMax">
+			<br>
+			<br> </div>
+	</form>
+	<!--Button with function to execute Javascipt -->
+	<br>
+	<input type="button" onclick="myFunction()" class="button" value="Submit">
+	<div class="tablefix">
+		<table id="makeTable"> </table>
+	</div>
+	<!-- Linking External JavaScript File -->
+	<script src="Javascript/Script.js"></script>
+</body>
+
+</html>
